@@ -1,0 +1,45 @@
+.shop_maindiv{
+    background-color: #edf2ef;
+}
+
+.card{
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.shop_card{
+    margin-top: 10px;
+    width: 350px;
+    background-color: #ffffff;
+}
+
+.shop_card img{
+    padding: 8px;
+    width:70%;
+    height:210px;
+    border-style: none;
+}
+
+.shop_card h2{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 400;
+}
+.btn_link{
+    margin: 0 auto ;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.No_record_div{
+    width: 100%;
+    text-align: center;
+    padding: 300px;
+}
+
+.No_record_div h1{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+

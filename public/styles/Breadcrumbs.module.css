@@ -1,0 +1,17 @@
+.linkk{
+    font-size: medium;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.link_div{
+    width: 130px;
+    display: flex;
+    margin: 5px auto;
+}
+.main{
+    margin: 10px 0px;
+}
+
+.activeClass{
+    color: rgb(91, 91, 214);
+} 

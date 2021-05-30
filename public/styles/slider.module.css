@@ -1,0 +1,52 @@
+.ImageStyle{
+    /* background-color: linear-gradient(to bottom, rgba(61, 85, 223, 0.52), rgba(36, 13, 30, 0.7)); */
+    opacity: 0.6;
+}
+.ImageStyle:hover{
+    /* background-color: linear-gradient(to bottom, rgba(61, 85, 223, 0.52), rgba(36, 13, 30, 0.7)); */
+    opacity: 0.8;
+    transition-duration: 2s;
+    color: black;
+}
+.photo{
+    height: 600px;
+}
+
+.heading{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: xx-large;
+    position: relative;
+    color: rgb(88, 82, 82);
+    top: -400px;
+    left: -100px;
+} 
+
+.para{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: large;
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: -400px;
+    left: -100px;
+}
+
+
+@media(max-width : 540px){
+    .photo{
+        height: 450px;
+    }
+}
+
+@media(max-width : 770px){
+    .heading{
+        top: -80px;
+        left: -20px;
+    } 
+    
+    .para{
+        top: -70px;
+        left: -20px;
+    }
+}

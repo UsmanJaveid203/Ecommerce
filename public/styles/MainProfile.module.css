@@ -1,0 +1,49 @@
+.detail_div h1{
+    font-size: x-large;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.detail_div h3{
+    font-size: large;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.detail_div p{
+    font-size: large;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.button{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img_div img{
+    border-style: none;
+    padding: 10px;
+    width: 230px;
+}
+.input{
+    padding: 10px;
+}
+.btnn{
+    width: 100px;
+    margin: 10px 0px;
+    background-color: gray;
+    font-size: small;
+    font-weight: 900;
+    padding: 8px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btnn:hover{
+    background-color: #776fe2;
+    color: white;
+}

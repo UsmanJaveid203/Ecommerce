@@ -1,0 +1,43 @@
+.main_header{
+    background-color: #FFFFFF;
+}
+.header_att{
+    text-align: center;
+    padding-top: 35px;
+}
+.header_att a:hover{
+    color: rgba(65, 104, 231, 0.849);
+}
+
+.navbar_list{
+    color: rgba(65, 104, 231, 0.849);
+    border-style: none;
+}
+
+.photo{
+    width : 200px; 
+    height: 80px;
+}
+
+/* .UnOrder{
+    overflow-y: hidden;
+} */
+
+/* .UnOrder li{
+    border-style: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
+
+@media(max-width:485px){
+    .photo{
+        width : 100px; 
+    }
+}
+
+
+@media(max-width:315px){
+    .photo{
+        width : 60px; 
+    }
+}

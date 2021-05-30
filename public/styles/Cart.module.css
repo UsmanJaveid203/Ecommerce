@@ -1,0 +1,82 @@
+.heading{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.pro_table{
+    border-style: none;
+    border-collapse: collapse;
+    margin: 15px;
+    width: 100%;
+}
+
+.image{
+    width: 80px;
+    border-style: none;
+}
+.tbl_heading th{
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: dodgerblue;
+    color: #ffffff;
+    text-align: center;
+}
+
+.inputfield{
+    width: 40px;
+    text-align: center;
+}
+
+.icons{
+    font-size: xx-large;
+    background-color: red;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.No_record_div{
+    width: 100%;
+    text-align: center;
+    margin: 30% 0px;
+}
+
+.No_record_div h1{
+    font-weight: bolder;
+    color: red;
+    height: 250px;
+    padding: 100px;
+    text-transform: uppercase;
+}
+
+
+.crd{
+    margin: 120px 10px;
+    border-style: none;
+}
+.crd_heading{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+}
+.card_para{
+    text-align: center;
+}
+.card_para strong{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.card_btn{
+    text-align: center;
+}
+.card_btn a{
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@media (max-width : 420px){
+    .tblDiv{
+        overflow-x: auto;
+    }
+}

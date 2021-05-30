@@ -1,0 +1,64 @@
+.mainHead{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3px 0;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.SmallHead{
+    width: 100%;
+    text-align: center;
+}
+
+.detail_main_duv{
+    width: 100%;
+}
+
+.user_detail{
+    justify-content: space-around;
+}
+
+.No_record_div{
+    width: 100%;
+    text-align: center;
+    padding: 300px;
+}
+
+.No_record_div h1{
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: red;
+}
+.photo{
+    text-align: center;
+    padding: 5px;
+}
+.photo img{
+    width: 120px;
+    height: 100px;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.btnn{
+    width: 80px;
+    margin: 10px 0px;
+    background-color: gray;
+    font-size: small;
+    font-weight: 600;
+    padding: 8px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btnn:hover{
+    background-color: #776fe2;
+    color: white;
+}

@@ -1,0 +1,14 @@
+.tblHeading{
+    font-weight: 600;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.tblInput{
+    width: 100%;
+    font-weight: 500;
+    font-size: large;
+    padding: 10px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #CED4DA;
+}

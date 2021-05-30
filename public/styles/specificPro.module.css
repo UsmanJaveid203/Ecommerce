@@ -1,0 +1,30 @@
+.heading{
+    color: #474d47;
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.img_div{
+    width: 100%; 
+} 
+
+.img_div img{
+    border-style: none;
+    padding: 10px;
+}
+
+.para{
+    font-size:14px;
+    padding: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+ 

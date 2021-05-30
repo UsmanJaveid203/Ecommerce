@@ -1,0 +1,12 @@
+password : mMZScsce8640iDvF
+username : UsmanJaved
+
+mongodb+srv://UsmanJaved:mMZScsce8640iDvF@cluster0.4cwgl.mongodb.net/ECOMMERCE?retryWrites=true&w=majority
+
+
+
+usmanJaved203
+RAycbQK9eHbKLtlD
+
+
+

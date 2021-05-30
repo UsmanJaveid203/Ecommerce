@@ -1,0 +1,76 @@
+.footer_main{
+    padding: 20px 0px;
+    background: #616161;
+}
+.F_div{
+    justify-content: space-around;
+}
+.footer_widget img{
+    width: 60%;
+    max-height: 100px;
+}
+.footer_widget{
+    margin: 0 auto;
+}
+.Unorder_list{
+    width: 60%;
+    margin: 10px auto;
+}
+.Unorder_list li {
+    margin: 3px 0;
+}
+
+.Unorder_list li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.Unorder_list li a:hover {
+    color: #2196f3;
+}
+
+
+.footer_link_contact h2{
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.footer_link_contact h2::before {
+    border-bottom: 3px solid #2196f3;
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    left: 0px;
+}
+.footer_link_contact ul li{
+    margin-bottom: 7px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.footer_link_contact ul li i{
+    left: 0;
+    top: 5px;
+    padding-right: 6px;
+}
+
+.footer_link_contact ul li p{
+    padding-left: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    padding-right: 16px;
+    line-height: 24px;
+}
+
+.footer_link_contact ul li p a{
+    color: #ffffff;
+}
+.footer_link_contact ul li p a:hover{
+    color: #2196f3;
+}

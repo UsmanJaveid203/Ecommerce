@@ -1,0 +1,36 @@
+.main_div{
+  background: #534a4a;
+  padding: 10px 0px;
+}
+.our_link{
+  float: right;
+}
+.our_link ul{
+  line-height: 20px;
+}
+.our_link ul li{
+  display: inline-block;
+  padding: 0px 10px;
+  line-height: 14px;
+}
+.our_link ul li a{
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.our_link ul li a:hover{
+  color: #8246f1;
+}
+
+.button{
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #534a4a;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button:hover{
+  color: #8246f1;
+}
