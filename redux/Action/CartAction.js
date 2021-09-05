@@ -8,7 +8,7 @@ export const DELETE_DATA = "DELETE_DATA";
 
 export const DataIntoCookie = (buy_product) => {
   return function (dispatch) {
-    fetch(`${process.env.HOST_URL}/api/cart/product/add_to_cart`, {
+    fetch(`https://ecommerce-203.herokuapp.com/api/cart/product/add_to_cart`, {
       method: "POST",
       headers: {
         "content-type": "application/json"
@@ -33,7 +33,7 @@ export const DataIntoCookie = (buy_product) => {
 
 export const GetFromCookie = () => {
   return function (dispatch) {
-    fetch(`${process.env.HOST_URL}/api/cart/product/get_from_cart`, {
+    fetch(`https://ecommerce-203.herokuapp.com/api/cart/product/get_from_cart`, {
       method: "GET",
       headers: {
         "content-type": "application/json"
@@ -58,7 +58,7 @@ export const GetFromCookie = () => {
 
 export const RemoveFromCookie = (index) => {
     return function (dispatch) {
-      fetch(`${process.env.HOST_URL}/api/cart/removeData/${index}`, {
+      fetch(`https://ecommerce-203.herokuapp.com/api/cart/removeData/${index}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json"
@@ -83,7 +83,7 @@ export const RemoveFromCookie = (index) => {
 
 export const UpdateCounting = (userInfor) => {
   return function (dispatch) {
-    fetch(`${process.env.HOST_URL}/api/cart/product/update_cart/${userInfor.id}`, {
+    fetch(`https://ecommerce-203.herokuapp.com/api/cart/product/update_cart/${userInfor.id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json"
@@ -109,7 +109,7 @@ export const UpdateCounting = (userInfor) => {
 
 export const DeleteCartData = (user_id) => {
   return function (dispatch) {
-    fetch(`${process.env.HOST_URL}/api/buy/BuyProduct/${user_id}`, {
+    fetch(`https://ecommerce-203.herokuapp.com/api/buy/BuyProduct/${user_id}`, {
             method: 'POST'
         })
     .then(res => res.json())

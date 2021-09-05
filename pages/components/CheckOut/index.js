@@ -18,7 +18,7 @@ export default function index(props) {
             "Content-Type": "application/json"
         }
 
-        return fetch(`${process.env.HOST_URL}/api/cart/payment`, {
+        return fetch(`https://ecommerce-203.herokuapp.com/api/cart/payment`, {
             method: 'POST',
             headers,
             body: JSON.stringify(body)

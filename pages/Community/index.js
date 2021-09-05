@@ -62,7 +62,7 @@ export default function index({ user_role, token, result }) {
 
     const DeleteHandler = (user_id) => {
 
-        fetch(`${process.env.HOST_URL}/api/user/delteData/${user_id}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/user/delteData/${user_id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -77,7 +77,7 @@ export default function index({ user_role, token, result }) {
     }
 
     const changeValueHanler = (number) => {
-        fetch(`${process.env.HOST_URL}/api/user/getAllData/${number}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/user/getAllData/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        let res = await fetch(`${process.env.HOST_URL}/api/user/getAllData`, {
+        let res = await fetch(`https://ecommerce-203.herokuapp.com/api/user/getAllData`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`

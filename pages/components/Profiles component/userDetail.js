@@ -19,7 +19,7 @@ export default function index(props) {
         e.preventDefault();
         var form = new FormData();
         form.append('u_image', picture);
-        fetch(`${process.env.HOST_URL}/api/user/updateData/${props.data._id}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/user/updateData/${props.data._id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${props.token}`

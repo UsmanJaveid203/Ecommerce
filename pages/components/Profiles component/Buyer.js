@@ -14,7 +14,7 @@ export default function Seller(props) {
     const [values, setValues] = new useState(null);
 
     const changeValueHanler = (number) => {
-        fetch(`${process.env.HOST_URL}/api/buy/BuyerProduct/${props.user_id}/${number}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/buy/BuyerProduct/${props.user_id}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

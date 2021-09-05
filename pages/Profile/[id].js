@@ -87,7 +87,7 @@ export default function SignUp({ token, data, user_role, user_id }) {
         form.append('u_password', values.password);
         form.append('u_image', values.picture);
 
-        fetch(`${process.env.HOST_URL}/api/user/updateData/${user_id}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/user/updateData/${user_id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -238,7 +238,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        const res = await fetch(`${process.env.HOST_URL}/api/user/getData/${user_id}`, {
+        const res = await fetch(`https://ecommerce-203.herokuapp.com/api/user/getData/${user_id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }

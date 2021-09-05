@@ -9,7 +9,7 @@ export default function index({ result }) {
     const [values, setValues] = new useState(null);
 
     const changeValueHanler = (number) => {
-        fetch(`${process.env.HOST_URL}/api/blog/get_blog/${10}/${number}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/blog/get_blog/${10}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -69,7 +69,7 @@ export default function index({ result }) {
 
 
 export async function getStaticProps() {
-    const res = await fetch(`${process.env.HOST_URL}/api/blog/get_blog/${10}`)
+    const res = await fetch(`https://ecommerce-203.herokuapp.com/api/blog/get_blog/${10}`)
     const result = await res.json()
     return {
         props: { result }

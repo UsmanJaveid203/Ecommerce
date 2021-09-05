@@ -20,7 +20,7 @@ export default function phones({ result }) {
 
 
     const changeValueHanler = (number) => {
-        fetch(`${process.env.HOST_URL}/api/product/get_data/${3}/${number}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/product/get_data/${3}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ export default function phones({ result }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetch(`${process.env.HOST_URL}/api/product/get_data/${3}`)
+    const res = await fetch(`https://ecommerce-203.herokuapp.com/api/product/get_data/${3}`)
     const result = await res.json()
     return {
         props: { result }

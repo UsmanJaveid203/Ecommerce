@@ -10,7 +10,7 @@ export default function userProfile({ token, data, user_id }) {
 
     const DeleteHandler = () => {
 
-        fetch(`${process.env.HOST_URL}/api/user/delteData/${user_id}`, {
+        fetch(`https://ecommerce-203.herokuapp.com/api/user/delteData/${user_id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -51,7 +51,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        let res = await fetch(`${process.env.HOST_URL}/api/user/getData/${user_id}`, {
+        let res = await fetch(`https://ecommerce-203.herokuapp.com/api/user/getData/${user_id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }

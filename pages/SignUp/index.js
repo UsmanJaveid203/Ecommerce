@@ -68,7 +68,7 @@ export default function SignUp() {
 
     const UploadRecord = (e) => { 
       e.preventDefault();
-      fetch(`${process.env.HOST_URL}/api/user/singup`, {
+      fetch(`https://ecommerce-203.herokuapp.com/api/user/singup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
