@@ -1,13 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a ecommerce project with these technologies React, node, and express js
 
 ## Getting Started
 
-First, run the development server:
+1) clone the project into local pc
+2) install dependencies by running
+```bash
+npm install
+# or
+yarn install
+```
+3) set the environment variable first from .env-sample
+4) run the development server:
 
 ```bash
-npm run dev
+npm strat
 # or
-yarn dev
+yarn start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
