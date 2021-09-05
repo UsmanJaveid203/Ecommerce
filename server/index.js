@@ -56,7 +56,7 @@ app
 
 
     if (process.env.NODE_ENV == 'production') {
-      app = next({ 'production' });
+      app = next('production');
       app.use(express.static(__dirname, '../.next'))
     }
 
