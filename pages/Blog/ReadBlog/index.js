@@ -40,7 +40,7 @@ export default function index({ result }) {
                     </div>
                 </div>
                 <div className="row">
-                    {results.data.map(value => {
+                    {results?.data?.map(value => {
                         return <div key={value._id} className={`col-md-6 col-lg-4 col-xl-4 ${BlogAreaStyle.card_div}`}>
                             <div className={`card ${BlogAreaStyle.main_box}`}>
                                 <div className="text-center">

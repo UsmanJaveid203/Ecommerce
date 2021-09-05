@@ -47,9 +47,9 @@ export default function laptops({ result }) {
             </Head>
             <ProductCategory />
             <div className={Laptop.shop_maindiv}>
-                {(results.data.length !== 0) ? <>
+                {(results?.data?.length !== 0) ? <>
                     <div className={`row ${Laptop.card}`}>
-                        {results.data.map(value => {
+                        {results?.data?.map(value => {
                             return <Card key={value._id} className={` mb-3 ${Laptop.shop_card}`}>
                                 <CardActionArea>
                                     <div className="text-center">

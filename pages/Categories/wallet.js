@@ -47,9 +47,9 @@ export default function wallet({ result }) {
             </Head>
             <ProductCategory />
             <div className={Wallet.shop_maindiv}>
-                {(results.data.length !== 0) ? <>
+                {(results?.data?.length !== 0) ? <>
                     <div className={`row ${Wallet.card}`}>
-                        {results.data.map(value => {
+                        {results?.data?.map(value => {
                             return <Card key={value._id} className={`z mb-3 ${Wallet.shop_card}`}>
                                 <CardActionArea>
                                     <div className="text-center">

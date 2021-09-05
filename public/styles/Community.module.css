@@ -62,3 +62,9 @@
     background-color: #776fe2;
     color: white;
 }
+
+@media screen and (max-width: 700px) {
+    .No_record_div{
+        padding: 50px;
+    } 
+}

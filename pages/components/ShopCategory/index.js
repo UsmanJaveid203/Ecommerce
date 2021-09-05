@@ -24,7 +24,7 @@ export default function index() {
                 </div>
                 <div className={`row container ${ShopStyling.card}`}>
                     {
-                        shopeState.map((value) => (
+                        shopeState?.map((value) => (
                             <Card data-aos="fade-up"  data-aos-anchor-placement="center-bottom" className={` mb-3 ${ShopStyling.shop_card}`}>
                                 <CardActionArea>
                                     <CardMedia

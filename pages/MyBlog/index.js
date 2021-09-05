@@ -48,9 +48,9 @@ export default function index({ user_role, token, result, user_id }) {
                                     </div>
                                 </div>
 
-                                {(results.data.length !== 0) ? <>
+                                {(results?.data?.length !== 0) ? <>
                                     <div className="row">
-                                        {results.data.map(value => {
+                                        {results?.data?.map(value => {
                                             return <div key={value._id} className={`col-md-6 col-lg-4 col-xl-4 ${BlogAreaStyle.card_div}`}>
                                                 <Card className={`card ${BlogAreaStyle.main_box}`}>
                                                     <div className="text-center">

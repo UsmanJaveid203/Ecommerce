@@ -59,7 +59,7 @@ export default function index({ token, user_id }) {
                                 {(Order_no > 0) ?
                                     <tbody>
                                         {
-                                            Information.map((value, index) => {
+                                            Information?.map((value, index) => {
                                                 return <tr key={index}>
                                                     <td>{index + 1}</td>
                                                     <td className="text-center">

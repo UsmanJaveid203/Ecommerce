@@ -16,7 +16,7 @@ export default function index(props) {
                 </div>
                 <div className="row">
                     {
-                        props.result.data.slice(0, 3).map((value) => (
+                        props.result?.data?.slice(0, 3).map((value) => (
                             <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="col-md-6 col-lg-4 col-xl-4">
                                 <div className={BlogAreaStyle.main_box}>
                                     <div key={value._id} className="text-center">

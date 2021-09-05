@@ -45,9 +45,9 @@ function index({ user_role, token, result, user_id }) {
                         <div className={`col-lg-9 col-12`}>
                             <ProductCategory />
                             <div className={Mypost.shop_maindiv}>
-                                {(results.data.length !== 0) ? <>
+                                {(results?.data?.length !== 0) ? <>
                                     <div className={`row ${Mypost.card}`}>
-                                        {results.data.map(value => {
+                                        {results?.data?.map(value => {
                                             return <Card key={value._id} className={` mb-3 ${Mypost.shop_card}`}>
                                                 <CardActionArea>
                                                     <div className="text-center">

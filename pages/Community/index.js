@@ -108,8 +108,8 @@ export default function index({ user_role, token, result }) {
                     <div className={`col-lg-8 col-12`}>
                         <div className={`container my-5 ${CommunityStyle.MainDiv}`}>
                             <h1 className={`${CommunityStyle.mainHead}`}>All User</h1>
-                            {(results.data.length !== 0) ? <>
-                                {results.data.map((u_values) => {
+                            {(results?.data?.length !== 0) ? <>
+                                {results?.data?.map((u_values) => {
                                     return <Accordion square expanded={expanded === u_values._id} onChange={handleChange(u_values._id)}>
                                         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
                                             <Typography className={`${CommunityStyle.SmallHead}`}><strong>Name : </strong>{u_values.u_fname} {u_values.u_sname}</Typography>

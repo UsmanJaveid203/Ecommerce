@@ -36,12 +36,12 @@ export default function Seller(props) {
 
     return (
         <React.Fragment>
-            {(infor.length !== 0) ? <>
+            {(infor?.length !== 0) ? <>
             <ul>
-                {infor.map((value, index) => {
+                {infor?.map((value, index) => {
                     return <li key={index} className={Profile.List}>
                         <div className="row">
-                            {value.items.map((values) => {
+                            {value?.items?.map((values) => {
                                 return <>
                                     <div className="col-md-4 col-12 text-center">
                                         <img src={`/images/${values.item.p_image}`} className={`img-thumbnail ${Profile.image}`} />

@@ -47,9 +47,9 @@ export default function phones({ result }) {
             </Head>
             <ProductCategory />
             <div className={Phones.shop_maindiv}>
-                {(results.data.length !== 0) ? <>
+                {(results?.data?.length !== 0) ? <>
                     <div className={`row ${Phones.card}`}>
-                        {results.data.map(value => {
+                        {results?.data?.map(value => {
                             return <Card key={value._id} className={` mb-3 ${Phones.shop_card}`}>
                                 <CardActionArea>
                                     <div className="text-center">

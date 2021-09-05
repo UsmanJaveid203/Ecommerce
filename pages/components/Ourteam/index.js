@@ -7,7 +7,7 @@ export default function index() {
                 <h5 className={`${TeamStyle.section_title} h1`}>OUR TEAM</h5>
                 <div className="row">
                     {
-                        teamreducer.map((value) => (
+                        teamreducer?.map((value) => (
                             <div className="col-xs-12 col-sm-6 col-md-4">
                                 <div className={TeamStyle.image_flip} ontouchstart="this.classList.toggle('hover');">
                                     <div data-aos="fade-up"  data-aos-anchor-placement="center-bottom" className={TeamStyle.mainflip}>

@@ -43,3 +43,8 @@
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 700px) {
+    .No_record_div{
+        padding: 50px;
+    } 
+}
