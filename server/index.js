@@ -55,6 +55,12 @@ app
     server.use("/api/buy", buyerRoutes);
 
 
+    if (process.env.NODE_ENV == 'production') {
+      app = next({ 'production' });
+      app.use(express.static(__dirname, '../.next'))
+    }
+
+
     server.get("*", (req, res) => {
       return handle(req, res);
     });

@@ -36,7 +36,7 @@ function index({ user_role, token, result, user_id }) {
     if (token) {
         if (user_role === "Admin" || user_role === "root") {
             return (
-                <>
+                <> 
                     <Head>
                         <title>Product</title>
                     </Head>
