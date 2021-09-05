@@ -45,7 +45,7 @@ export default function index({ token, user_id, data }) {
         form.append('b_img', values.b_img);
         form.append('b_description', values.b_description);
 
-        fetch(`http://localhost:3000/api/blog/Update_specific_blog/${user_id}`, {
+        fetch(`${process.env.HOST_URL}/api/blog/Update_specific_blog/${user_id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -109,7 +109,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        const res = await fetch(`http://localhost:3000/api/blog/specific_blog/${user_id}`)
+        const res = await fetch(`${process.env.HOST_URL}/api/blog/specific_blog/${user_id}`)
         const data = await res.json()
         return {
             props: { token, user_id, data }

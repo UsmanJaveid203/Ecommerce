@@ -62,7 +62,7 @@ export default function index({ user_role, token, result }) {
 
     const DeleteHandler = (user_id) => {
 
-        fetch(`http://localhost:3000/api/user/delteData/${user_id}`, {
+        fetch(`${process.env.HOST_URL}/api/user/delteData/${user_id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -77,7 +77,7 @@ export default function index({ user_role, token, result }) {
     }
 
     const changeValueHanler = (number) => {
-        fetch(`http://localhost:3000/api/user/getAllData/${number}`, {
+        fetch(`${process.env.HOST_URL}/api/user/getAllData/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        let res = await fetch("http://localhost:3000/api/user/getAllData", {
+        let res = await fetch(`${process.env.HOST_URL}/api/user/getAllData`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`

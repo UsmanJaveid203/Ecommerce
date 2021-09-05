@@ -68,7 +68,7 @@ export default function SignUp() {
 
     const UploadRecord = (e) => { 
       e.preventDefault();
-      fetch('http://localhost:3000/api/user/singup', {
+      fetch(`${process.env.HOST_URL}/api/user/singup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -18,7 +18,7 @@ export default function Home({result}) {
 
 
 export async function getStaticProps(ctx) {
-  const res = await fetch(`http://localhost:3000/api/blog/get_blog/${10}`)
+  const res = await fetch(`${process.env.HOST_URL}/api/blog/get_blog/${10}`)
   const result = await res.json()
 
   return {

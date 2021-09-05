@@ -52,7 +52,7 @@ export default function index({ user_role, token, user_id }) {
                 form.append('p_category', values.p_category);
                 form.append('p_descrip', values.p_descrip);
 
-                fetch('http://localhost:3000/api/product/upload_data', {
+                fetch(`${process.env.HOST_URL}/api/product/upload_data`, {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`

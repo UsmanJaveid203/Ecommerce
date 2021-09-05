@@ -9,7 +9,7 @@ export default function index({ data, user_id, token }) {
     const router = useRouter()
 
     const DeleteHandler = () => {
-        fetch(`http://localhost:3000/api/blog/Delete_record/${user_id}`, {
+        fetch(`${process.env.HOST_URL}/api/blog/Delete_record/${user_id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -66,7 +66,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        const res = await fetch(`http://localhost:3000/api/blog/specific_blog/${user_id}`)
+        const res = await fetch(`${process.env.HOST_URL}/api/blog/specific_blog/${user_id}`)
         const data = await res.json()
         return {
             props: { data, user_id, token },

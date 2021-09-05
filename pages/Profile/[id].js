@@ -87,7 +87,7 @@ export default function SignUp({ token, data, user_role, user_id }) {
         form.append('u_password', values.password);
         form.append('u_image', values.picture);
 
-        fetch(`http://localhost:3000/api/user/updateData/${user_id}`, {
+        fetch(`${process.env.HOST_URL}/api/user/updateData/${user_id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -238,7 +238,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        const res = await fetch(`http://localhost:3000/api/user/getData/${user_id}`, {
+        const res = await fetch(`${process.env.HOST_URL}/api/user/getData/${user_id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }

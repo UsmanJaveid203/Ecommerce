@@ -12,7 +12,7 @@ export default function Seller(props) {
     const [values, setValues] = new useState(null);
 
     const changeValueHanler = (number) => {
-        fetch(`http://localhost:3000/api/buy/SellerProduct/${props.user_id}/${number}`, {
+        fetch(`${process.env.HOST_URL}/api/buy/SellerProduct/${props.user_id}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

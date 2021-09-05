@@ -17,7 +17,7 @@ function index({ user_role, token, result, user_id }) {
 
     const [values, setValues] = new useState(null);
     const changeValueHanler = (number) => {
-        fetch(`http://localhost:3000/api/product/get_data/${user_id}/${number}`, {
+        fetch(`${process.env.HOST_URL}/api/product/get_data/${user_id}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -101,7 +101,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        let res = await fetch(`http://localhost:3000/api/product/get_data/${user_id}`)
+        let res = await fetch(`${process.env.HOST_URL}/api/product/get_data/${user_id}`)
         let result = await res.json();
         return {
             props: { user_role, token, result, user_id }

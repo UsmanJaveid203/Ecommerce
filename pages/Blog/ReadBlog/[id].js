@@ -26,7 +26,7 @@ export default function index({ data }) {
 export async function getServerSideProps(ctx) {
     let user_id = ctx.params.id;
 
-    const res = await fetch(`http://localhost:3000/api/blog/specific_blog/${user_id}`)
+    const res = await fetch(`${process.env.HOST_URL}/api/blog/specific_blog/${user_id}`)
     const data = await res.json()
     return {
         props: { data },

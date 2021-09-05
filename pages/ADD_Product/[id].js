@@ -50,7 +50,7 @@ export default function index({ token, user_id, data }) {
         form.append('p_category', values.p_category);
         form.append('p_descrip', values.p_descrip);
 
-        fetch(`http://localhost:3000/api/product/update_specific_data/${user_id}`, {
+        fetch(`${process.env.HOST_URL}/api/product/update_specific_data/${user_id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -126,7 +126,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        const res = await fetch(`http://localhost:3000/api/product/specific_data/${user_id}`)
+        const res = await fetch(`${process.env.HOST_URL}/api/product/specific_data/${user_id}`)
         const data = await res.json()
 
         return {

@@ -49,7 +49,7 @@ export default function index({ user_role, token, user_id }) {
                 form.append('b_img', values.b_img);
                 form.append('b_description', values.b_description);
 
-                fetch('http://localhost:3000/api/blog/upload_data', {
+                fetch(`${process.env.HOST_URL}/api/blog/upload_data`, {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`

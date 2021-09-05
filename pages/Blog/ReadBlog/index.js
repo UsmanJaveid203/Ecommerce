@@ -9,7 +9,7 @@ export default function index({ result }) {
     const [values, setValues] = new useState(null);
 
     const changeValueHanler = (number) => {
-        fetch(`http://localhost:3000/api/blog/get_blog/${10}/${number}`, {
+        fetch(`${process.env.HOST_URL}/api/blog/get_blog/${10}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -69,7 +69,7 @@ export default function index({ result }) {
 
 
 export async function getStaticProps() {
-    const res = await fetch(`http://localhost:3000/api/blog/get_blog/${10}`)
+    const res = await fetch(`${process.env.HOST_URL}/api/blog/get_blog/${10}`)
     const result = await res.json()
     return {
         props: { result }

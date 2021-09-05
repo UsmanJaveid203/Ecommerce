@@ -4,7 +4,7 @@ export const DELETE_DATA = "DELETE_DATA";
 
 export const SellerData = (user_id) => {
   return function (dispatch) {
-    fetch(`http://localhost:3000/api/buy/SellerProduct/${user_id}`, {
+    fetch(`${process.env.HOST_URL}/api/buy/SellerProduct/${user_id}`, {
       method: "GET"
     })
       .then(res => res.json())
@@ -21,7 +21,7 @@ export const SellerData = (user_id) => {
 
 export const BuyerData = (user_id) => {
   return function (dispatch) {
-    fetch(`http://localhost:3000/api/buy/BuyerProduct/${user_id}`, {
+    fetch(`${process.env.HOST_URL}/api/buy/BuyerProduct/${user_id}`, {
       method: "GET"
     })
       .then(res => res.json())
@@ -38,7 +38,7 @@ export const BuyerData = (user_id) => {
 
 export const UpdateData = (user_id, val) => {
   return function (dispatch) {
-    fetch(`http://localhost:3000/api/buy/UpdateSellerProduct/${user_id}`, {
+    fetch(`${process.env.HOST_URL}/api/buy/UpdateSellerProduct/${user_id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json"
@@ -58,7 +58,7 @@ export const UpdateData = (user_id, val) => {
 
 export const DeleteData = (pro_id, seller_id) => {
   return function (dispatch) {
-    fetch(`http://localhost:3000/api/buy/DeleteSellerProduct/${pro_id}`, {
+    fetch(`${process.env.HOST_URL}/api/buy/DeleteSellerProduct/${pro_id}`, {
       method: "DELETE"
     })
       .then(res => res.json())

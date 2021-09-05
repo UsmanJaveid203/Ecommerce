@@ -20,7 +20,7 @@ export default function shoes({ result }) {
 
 
     const changeValueHanler = (number) => {
-        fetch(`http://localhost:3000/api/product/get_data/${4}/${number}`, {
+        fetch(`${process.env.HOST_URL}/api/product/get_data/${4}/${number}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -84,7 +84,7 @@ export default function shoes({ result }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetch(`http://localhost:3000/api/product/get_data/${4}`)
+    const res = await fetch(`${process.env.HOST_URL}/api/product/get_data/${4}`)
     const result = await res.json()
     return {
         props: { result }

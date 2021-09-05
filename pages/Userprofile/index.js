@@ -10,7 +10,7 @@ export default function userProfile({ token, data, user_id }) {
 
     const DeleteHandler = () => {
 
-        fetch(`http://localhost:3000/api/user/delteData/${user_id}`, {
+        fetch(`${process.env.HOST_URL}/api/user/delteData/${user_id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${token}`
@@ -51,7 +51,7 @@ export async function getServerSideProps(ctx) {
             props: {}
         }
     } else {
-        let res = await fetch(`http://localhost:3000/api/user/getData/${user_id}`, {
+        let res = await fetch(`${process.env.HOST_URL}/api/user/getData/${user_id}`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }
